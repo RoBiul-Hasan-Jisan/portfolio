@@ -52,17 +52,19 @@ export default function Hero() {
   const shadowY = mousePos.y * 20;
 
   return (
-    <section
-      id="home"
-      onMouseMove={handleMouseMove}
-      className="
-        relative flex flex-col md:flex-row 
-        items-center justify-center 
-        h-[66vh] sm:h-[70vh] md:min-h-screen 
-        px-4 md:px-8 
-        bg-gradient-to-tr from-purple-900 via-indigo-900 to-black 
-        overflow-hidden"
-    >
+   <section
+  id="home"
+  onMouseMove={handleMouseMove}
+  className="
+    relative flex flex-col md:flex-row 
+    items-center justify-center 
+    h-[66.6667vh] 
+    px-4 md:px-8 
+    bg-gradient-to-tr from-purple-900 via-indigo-900 to-black 
+    overflow-hidden
+  "
+>
+
       {/* Background pattern lines */}
       <svg
         className="absolute inset-0 w-full h-full opacity-20 pointer-events-none"
