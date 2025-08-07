@@ -30,7 +30,8 @@ export default function Skills() {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Skills & Technologies</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 mt-12">Skills & Technologies</h2>
+
         <p className="text-gray-600 mb-12 text-sm sm:text-base max-w-3xl mx-auto">
           A collection of technologies and tools I've worked with in web development, programming, and AI/ML.
         </p>

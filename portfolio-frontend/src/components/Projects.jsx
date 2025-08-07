@@ -7,7 +7,7 @@ const projects = [
     title: "TrackFlix - Movie Streaming App",
     description:
       "React-based frontend for browsing movies, trailers, managing watchlists, and personalized content.",
-    link: "https://4loopers-newest.vercel.app/",
+    link: "https://4loopers.vercel.app/",
     tags: ["React", "Tailwind", "Streaming"],
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "FlowBiasCraft - Software Company",
     description:
       "Software company website showcasing services and team with modern design.",
-    link: "https://flowbiascraft-umzm.vercel.app/",
+    link: "https://flowbiascraft-umzm.vercel.app/" ,
     tags: ["React", "Tailwind", "Corporate"],
   },
   {
@@ -76,9 +76,10 @@ export default function Projects() {
 
 
   <div className="max-w-7xl mx-auto relative z-10">
-    <h2 id="projects-title" className="text-5xl font-extrabold mb-6 drop-shadow-md">
-      🚀 Featured Projects
+    <h2 id="projects-title" className="text-5xl font-extrabold mb-4 mt-12">
+       Featured Projects
     </h2>
+   
     <p className="text-slate-300 text-lg mb-12 max-w-3xl mx-auto">
       A showcase of my recent work and experiments
     </p>
