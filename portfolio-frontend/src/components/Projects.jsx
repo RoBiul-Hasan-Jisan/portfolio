@@ -1,4 +1,3 @@
-// Projects.jsx
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -23,7 +22,7 @@ const projects = [
     title: "FlowBiasCraft - Software Company",
     description:
       "Software company website showcasing services and team with modern design.",
-    link: "https://flowbiascraft-umzm.vercel.app/" ,
+    link: "https://flowbiascraft-umzm.vercel.app/",
     tags: ["React", "Tailwind", "Corporate"],
   },
   {
@@ -39,58 +38,39 @@ const projects = [
 export default function Projects() {
   return (
     <section
-  id="projects"
-  aria-labelledby="projects-title"
-  className="py-20 px-6 bg-gradient-to-tr from-[#0f172a] via-[#1e293b] to-[#334155] text-center text-white relative"
->
-  <div className="absolute -top-1 left-0 w-full overflow-hidden leading-[0] rotate-180 z-0 pointer-events-none">
-  <svg
-    className="w-full h-40"
-    viewBox="0 0 1440 320"
-    xmlns="http://www.w3.org/2000/svg"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <defs>
-      <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stopColor="white" />
-        <stop offset="100%" stopColor="#fbcfe8" /> {/* pink-200 hex */}
-      </linearGradient>
-    </defs>
+      id="projects"
+      aria-labelledby="projects-title"
+      className="py-16 px-4 text-white flex flex-col items-center"
+      style={{ backgroundColor: "#7AB1D3" }}
+    >
+      <h2
+        id="projects-title"
+        className="text-3xl md:text-4xl font-bold mb-6 drop-shadow-md text-center"
+      >
+        Featured Projects
+      </h2>
 
-    <path
-      fill="url(#waveGradient)"
-      d="
-        M0,160
-        C144,80 288,240 432,160
-        C576,80 720,240 864,160
-        C1008,80 1152,240 1296,160
-        C1440,80 1440,160 1440,160
-        L1440,320 L0,320 Z
-      "
-    />
-  </svg>
-</div>
+      <p className="text-white/90 text-sm sm:text-base mb-10 max-w-3xl text-center drop-shadow-sm">
+        A showcase of my recent work and experiments
+      </p>
 
+      {/* Projects Grid */}
+      <div className="w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
 
-
-  <div className="max-w-7xl mx-auto relative z-10">
-    <h2 id="projects-title" className="text-5xl font-extrabold mb-4 mt-12">
-       Featured Projects
-    </h2>
-   
-    <p className="text-slate-300 text-lg mb-12 max-w-3xl mx-auto">
-      A showcase of my recent work and experiments
-    </p>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </div>
-  </div>
-</section>
-
+      {/* See All Projects Button */}
+      <a
+        href="https://github.com/RoBiul-Hasan-Jisan?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center px-6 py-2 bg-[#7AB1D3] hover:bg-[#5EA3C2]
+                   rounded-full text-white font-semibold text-sm shadow-md transition duration-200"
+      >
+        See All Projects
+      </a>
+    </section>
   );
 }

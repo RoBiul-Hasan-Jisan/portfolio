@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -14,47 +15,50 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-500 via-purple-600 to-pink-500 px-6 py-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-[#0f172a] via-[#3b82f6] to-[#7ab1d3] px-6 py-20"
     >
       <div
-        className="backdrop-blur-md bg-white/30 rounded-3xl shadow-xl max-w-md w-full p-10 text-center
+        className="backdrop-blur-md bg-white/10 rounded-3xl shadow-2xl max-w-md w-full p-10 text-center
                    animate-fadeInUp"
       >
+        {/* Header */}
         <h2 className="text-5xl font-extrabold text-white mb-2 relative inline-block">
           Get in Touch
-          <span className="block w-16 h-1 bg-white rounded-full mt-3 mx-auto opacity-60"></span>
+          <span className="block w-16 h-1 bg-white rounded-full mt-3 mx-auto opacity-50"></span>
         </h2>
 
         <p className="text-white/90 mt-6 mb-8 text-lg font-medium">
           Feel free to reach out by email or connect with me on social media.
         </p>
 
-        <div className="flex justify-center items-center space-x-4 mb-10">
+        {/* Email Section */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
           <a
             href={`mailto:${email}`}
-            className="text-white font-semibold text-lg underline hover:text-yellow-300 transition"
+            className="text-white font-semibold text-base underline hover:text-[#e0f2ff] transition"
           >
             {email}
           </a>
           <button
             onClick={copyEmailToClipboard}
             aria-label="Copy email to clipboard"
-            className={`relative overflow-hidden px-5 py-2 rounded-full border border-white text-white font-semibold
-            hover:bg-yellow-300 hover:text-indigo-900 transition-all duration-300
-            focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:ring-opacity-50`}
+            className={`relative overflow-hidden px-5 py-2 rounded-full border border-white/50 text-white font-semibold
+            hover:bg-white/20 hover:text-white transition-all duration-300
+            focus:outline-none focus:ring-2 focus:ring-white/40`}
           >
             {copied ? "Copied!" : "Copy"}
-            <span className="ripple absolute rounded-full bg-yellow-300 opacity-20"></span>
+            <span className="ripple absolute rounded-full bg-white/20 opacity-20"></span>
           </button>
         </div>
 
-        <div className="flex justify-center space-x-10 text-white text-4xl">
+        {/* Social Icons */}
+        <div className="flex justify-center space-x-10 text-white text-3xl sm:text-4xl">
           <a
             href="https://github.com/RoBiul-Hasan-Jisan"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-yellow-300 transition transform hover:scale-125"
+            className="hover:text-[#e0f2ff] transition transform hover:scale-110"
           >
             <FaGithub />
           </a>
@@ -63,7 +67,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-yellow-300 transition transform hover:scale-125"
+            className="hover:text-[#e0f2ff] transition transform hover:scale-110"
           >
             <FaLinkedin />
           </a>
@@ -72,15 +76,24 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="hover:text-yellow-300 transition transform hover:scale-125"
+            className="hover:text-[#e0f2ff] transition transform hover:scale-110"
           >
             <FaFacebook />
+          </a>
+          <a
+            href="https://codeforces.com/profile/RobiulHasanJisan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Codeforces"
+            className="hover:text-yellow-300 transition transform hover:scale-125"
+          >
+            <SiCodeforces />
           </a>
         </div>
       </div>
 
-      {/* Ripple effect CSS (can be in your global styles or Tailwind config) */}
-      <style jsx>{`
+      {/* Ripple and FadeIn Animation */}
+      <style>{`
         .ripple {
           width: 100%;
           height: 100%;
