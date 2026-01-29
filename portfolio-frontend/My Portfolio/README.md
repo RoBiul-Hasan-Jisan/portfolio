@@ -1,4 +1,4 @@
-# Favour Tochukwu Ajokubi - Portfolio Project
+# Robiul Hasan Jisan | ML Developer Portfolio
 
 Welcome to my portfolio website's README! I'm Robiul Hasan Jisan , a ML developer . This portfolio showcases my passion for blending code and design seamlessly to create beautiful digital experiences.
 
@@ -38,6 +38,6 @@ Feel free to connect with me for potential collaborations or opportunities:
 
 - Email: [robiulhasanjisan88@gmail.com](mailto:robiulhasanjisan88@gmail.com)
 - LinkedIn: [Robiul hasan Jisan ](https://www.linkedin.com/in/robiul-hasan-45766228b/)
-- Portfolio: [robiulhasanjisan88.com]()
+- Portfolio: [robiulhasanjisan.com]()
 
 Thank you for visiting my portfolio project! Your feedback and suggestions are greatly appreciated.
