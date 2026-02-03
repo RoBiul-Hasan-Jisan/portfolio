@@ -25,8 +25,8 @@ export const MyProjects = [
   {
     title: "Clothing-Xpress",
     type: projectType.personal,
-    inProgress: true,
-    imgSrc: "",
+    inProgress: false,
+    imgSrc: "https://i.ibb.co.com/99Xsg38G/image.png",
     code: "https://github.com/RoBiul-Hasan-Jisan/Clothing-Xpress",
     projectLink: "https://clothing-xpress-9q3q.vercel.app/",
     tech: ["react", "nextjs", "typescript", "redux", "tailwind", "framer-motion", "radix-ui", "shadcn"],
@@ -54,9 +54,10 @@ export const MyProjects = [
   },
   {
     title: "Wandernest",
+    //type: projectType.personal,
     type: projectType.personal,
     inProgress: true,
-    imgSrc: "",
+    imgSrc: "https://i.ibb.co.com/fYLB7nm5/image.png",
     code: "https://github.com/RoBiul-Hasan-Jisan/Wandernest",
     projectLink: "https://wandernest-ashen.vercel.app/",
     tech: ["react", "nextjs", "typescript", "redux", "tailwind", "framer-motion"],
@@ -85,7 +86,7 @@ export const MyProjects = [
   {
     title: "Trackflix",
     type: projectType.personal,
-    imgSrc: "",
+    imgSrc: "https://i.ibb.co.com/rKPKDRjH/image.png",
     code: "https://github.com/RoBiul-Hasan-Jisan/4loopers",
     projectLink: "https://4loopers.vercel.app/",
     tech: ["react", "tailwind", "typescript", "framer-motion", "axios", "mongodb"],
@@ -114,7 +115,7 @@ export const MyProjects = [
   {
     title: "GreenEye",
     type: projectType.personal,
-    imgSrc: "",
+    imgSrc: "https://i.ibb.co.com/LdYNhTXH/image.png",
     code: "https://github.com/RoBiul-Hasan-Jisan/GreenEye",
     projectLink: "https://leafpredictiondbversion.onrender.com/login",
     tech: ["flask", "pytorch", "python", "pillow", "postgresql"],
@@ -140,5 +141,62 @@ export const MyProjects = [
       </>
     ),
   },
+
+
+  {
+  title: "CPU Scheduling Simulator",
+  type: projectType.personal,
+  inProgress: false,
+  imgSrc: "https://i.ibb.co.com/zT4V4xYV/image.png",
+  code: "https://github.com/RoBiul-Hasan-Jisan/OS-Simulator",
+  projectLink: "https://os-simulator-weld.vercel.app/",
+  tech: [
+    "react",
+    "typescript",
+    "tailwind",
+    "react-router",
+    "headless-ui",
+    "react-icons",
+    "react-toastify"
+  ],
+  description:
+    "An interactive and responsive web-based CPU Scheduling Simulator that visualizes core Operating System scheduling algorithms with Gantt charts and performance metrics.",
+  modalContent: (
+    <>
+      <p>
+        🧠 <strong>CPU Scheduling Simulator</strong> is an educational web
+        application designed to help students and OS enthusiasts understand how
+        CPU scheduling algorithms work internally.
+      </p>
+
+      <h2>✨ Supported Algorithms</h2>
+      <ul>
+        <li>📌 First Come First Serve (FCFS)</li>
+        <li>⏱️ Shortest Job First (SJF)</li>
+        <li>⚡ Shortest Remaining Time First (SRTF)</li>
+        <li>🔄 Round Robin (Custom Time Quantum)</li>
+        <li>⭐ Priority Scheduling (Preemptive)</li>
+        <li>⭐ Priority Scheduling (Non-Preemptive)</li>
+      </ul>
+
+      <h2>📊 Key Features</h2>
+      <ul>
+        <li>📈 Interactive Gantt Chart Visualization</li>
+        <li>🧮 Automatic Waiting & Turnaround Time Calculation</li>
+        <li>📱 Fully Responsive (Mobile-First Design)</li>
+        <li>🌙 Dark / Light Mode Support</li>
+        <li>📝 Built-in Documentation for Each Algorithm</li>
+        <li>✅ Real-time Form Validation & Dynamic Inputs</li>
+      </ul>
+
+      <p>
+        Built with <strong>React, TypeScript, and Tailwind CSS</strong>, this
+        project focuses on clean UI, accurate simulation logic, and strong
+        educational value for Operating Systems coursework. 🚀
+      </p>
+    </>
+  ),
+},
+
   
 ];

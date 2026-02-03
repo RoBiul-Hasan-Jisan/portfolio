@@ -15,7 +15,8 @@ export const Stats = () => {
             <span className="chip">PyTorch</span>
             <span className="chip">LLMs / LangChain</span>
             <span className="chip">Rust</span>
-            <span className="chip">FastAPI</span>
+            <span className="chip">AWS</span>
+            
           </div>
         </div>
       </Reveal>
@@ -32,7 +33,7 @@ export const Stats = () => {
             <span className="chip">Pandas / NumPy</span>
             <span className="chip">TensorFlow</span>
             <span className="chip">Docker</span>
-            <span className="chip">AWS</span>
+            <span className="chip">FastAPI</span>
             
             {/* Web Dev - Core Strengths */}
             <span className="chip">TypeScript</span>
