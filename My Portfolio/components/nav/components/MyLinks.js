@@ -20,7 +20,7 @@ export const MyLinks = () => {
         transition={{ duration: 0.5, delay: 0.0 }}
         title="Linkedin"
       >
-        <Link href="https://www.linkedin.com/in/robiul-hasan-45766228b/" target="_blank" rel="nofollow"> 
+        <Link href="https://www.linkedin.com/in/robiul-hasan-jisan-45766228b/" target="_blank" rel="nofollow"> 
           <AiFillLinkedin size="2.4rem" />
         </Link>
       </motion.span>
